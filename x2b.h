@@ -13,6 +13,6 @@ Electrical and Computer Engineering (ECE) Department, UNC at Charlotte
 November 2024
 */
 
-int32_t imul (int32_t eax , int32_t div);
+int32_t imul (int32_t eax , int32_t mul);
 
-int32_t idiv (int32_t a , int32_t b);
+int32_t idiv (int32_t eax , int32_t div);
