@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdint.h>
 
 #include "x2b.h"
 
@@ -16,8 +15,8 @@ November 2024
 
 int main (){
 
-int32_t x = 500;
-int32_t y = 10;
+int x = 500;
+int y = 10;
 
 // Calling division function 
 printf(" \n Result of the division is: %d\n", idiv(x,y));
