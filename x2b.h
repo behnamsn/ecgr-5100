@@ -1,11 +1,11 @@
-#include <stido.h>
-
+#include <stdio.h>
+#include <stdint.h>
 
 /*
 
 This program is written by Behnam Sobhani Nadri for graduate coursework ECGR 5100 Research Tools and Techniques. 
 
-repo: http://github.com/behnamsn/ecgr_5100_ron_sass
+repo: http://github.com/behnamsn/ecgr-5100
 Name: Behnam Sobhani Nadri
 NinerNET ID: bsobhani(@charlotte.edu)
 
