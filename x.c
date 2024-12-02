@@ -16,8 +16,8 @@ November 2024
 
 int main (){
 
-uint32_t x = 500;
-uint32_t y = 10;
+int32_t x = 500;
+int32_t y = 10;
 
 // Calling division function 
 printf(" \n Result of the division is: %d\n", idiv(x,y));
