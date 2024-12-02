@@ -37,8 +37,8 @@ int
 			// upon each iteration we can xor bits,
 			// carry is added to the next bit in inner loop (i) 
 		 	
-			ans[i] = edx_rem[i+j] & mul_rem[j] ; // shift the bits by the size of j
-			if (edx_rem[i] && mul_rem[j]); ans[i+1] ; // adding carry to the next 
+			ans[i] = edx_rem[i] & mul_rem[i+j] ; // shift the bits by the size of j
+			if (edx_rem[i] && mul_rem[i+j]); ans[i+1]=1 ; // adding carry to the next 
 		}
 	}
 return ans;
@@ -62,8 +62,16 @@ int
 		// convert to binary
 		eax_rem[i] = quot_eax % 2; 
 		div_rem[i] = quot_div % 2; 
-		if(div_rem[i]) ans[i] = eax_rem[i] / div_rem[i];
 	}
 	
+// division loop	
+	for(int j=7 ; j>=i ; j--){ // loop for shift
+		for(i=7 ; i>=0 ; i--){ 
+			// loop for multiply
+			// upon each iteration perform an OR operation
+			ans[i] = eax_rem[i+j] | div_rem[i] ; // shift the bits by the size of j
+		}	
+		i=7; //reset the counter for the multiply
+}
 return ans;
 };
